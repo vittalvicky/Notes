@@ -1,0 +1,7 @@
+loadtest:
+  stage: loadtest
+  script:
+    - mvn package
+    - docker build -t vinothit02/devops:$BASE_VERSION$CI_PIPELINE_IID -f docker/Dockerfile .
+    - docker run --name testcontainer -p8989:8080 -d vinothit02/devops:$BASE_VERSION$CI_PIPELINE_IID
+    - jmeter -n -t loadtest.jmx -l loadtest.jtl 
