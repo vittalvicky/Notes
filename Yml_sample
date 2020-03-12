@@ -7,3 +7,5 @@ loadtest:
     - jmeter -n -t loadtest.jmx -l loadtest.jtl 
 
 https://us-east-1.signin.aws.amazon.com/oauth?SignatureVersion=4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJMOATPLHVSJ563XQ&X-Amz-Date=2020-03-12T09%3A54%3A53.026Z&X-Amz-Signature=325eb8e4ab2bd63c24f8170330d96d18f0dce331bd565d91e0080c1434f53492&X-Amz-SignedHeaders=host&client_id=arn%3Aaws%3Aiam%3A%3A015428540659%3Auser%2Fhomepage&redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3Fstate%3DhashArgs%2523%26isauthcode%3Dtrue&response_type=code&state=hashArgs%23#
+
+https://us-west-1.console.aws.amazon.com/ec2/v2/home?region=us-west-1#Instances:sort=instanceId
