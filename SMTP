@@ -1,0 +1,24 @@
+import smtplib
+from email.mime.multipart import MIMEMultipart
+
+ 
+
+try:
+    import smtplib 
+  
+
+ 
+
+    s = smtplib.SMTP(host='mail.vinsys.com',port=587) 
+    s.starttls() 
+    s.login("iot@vinsys.com", "7@5z2n7L") 
+    print(s)
+    msg= MIMEMultipart()
+    msg['From']= 'iot@vinsys.com'
+    msg['To']='vinothit02@gmail.com'
+    msg['Subject']='dummy msg'
+    s.send_message(msg) 
+except Exception as e:
+    print(e)
+finally:
+    print('will do cleanup later')
